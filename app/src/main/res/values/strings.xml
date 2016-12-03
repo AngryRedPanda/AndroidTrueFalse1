@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Whatever</string>
     <string name="button"> Text</string>
-    <string name="message"> LOL </string>
+    <string name="message"> Wrong! </string>
+    <string name="message1"> Right! </string>
+    <string name="textView"> Question </string>
 </resources>
