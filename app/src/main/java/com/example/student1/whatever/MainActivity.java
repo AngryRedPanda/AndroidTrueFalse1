@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
             new TrueFalse("Do you like Android?", true),
             new TrueFalse("Will you become good at Android?", false),
     };
-
+// fdfs
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
