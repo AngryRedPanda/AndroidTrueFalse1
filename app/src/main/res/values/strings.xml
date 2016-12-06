@@ -1,7 +1,20 @@
 <resources>
-    <string name="app_name">Whatever</string>
-    <string name="button"> Text</string>
+    <string name="app_name">Quiz</string>
     <string name="message"> Wrong! </string>
     <string name="message1"> Right! </string>
-    <string name="textView"> Question </string>
+    
+    <string name="question_first"> Are you a noob at Android</string>
+    <string name="question_second"> Do you like Android?</string>
+    <string name="question_third"> Will you become good at Android?</string>
+    <string name="question_text_view"> </string>
+
+    <string name="question_first_cheat"> ofc you are </string>
+    <string name="question_second_cheat"> that\'s ez one</string>
+    <string name="question_third_cheat"> stop pressing that button it\'s useless</string>
+
+    <string name="buttonNxt"> Next </string>
+    <string name="buttonPrev"> Previous </string>
+    <string name="button"> True</string>
+    <string name="button1"> False </string>
+    <string name="cheat_button"> Cheat </string>
 </resources>

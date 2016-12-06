@@ -1,22 +1,21 @@
 package com.example.student1.whatever;
 
-import org.w3c.dom.Text;
 
 public class TrueFalse {
-    String questionText;
-    boolean answer;
+    private int textResID;
+    private boolean answer;
 
-    public TrueFalse(String questionText, boolean answer) {
-        this.questionText = questionText;
+    public TrueFalse(int mTextResID, boolean answer) {
+        this.textResID = mTextResID;
         this.answer = answer;
     }
 
-    public void setQuestionText(String x) {
-        this.questionText = x;
+    public void setTextResID(int x) {
+        this.textResID = x;
     }
 
-    public String getQuestionText() {
-        return questionText;
+    public int getTextResID() {
+        return textResID;
     }
 
     public void setAnswer(boolean answer) {
