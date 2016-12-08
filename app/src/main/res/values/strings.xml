@@ -2,7 +2,7 @@
     <string name="app_name">Quiz</string>
     <string name="message"> Wrong! </string>
     <string name="message1"> Right! </string>
-    
+
     <string name="question_first"> Are you a noob at Android</string>
     <string name="question_second"> Do you like Android?</string>
     <string name="question_third"> Will you become good at Android?</string>
@@ -17,4 +17,6 @@
     <string name="button"> True</string>
     <string name="button1"> False </string>
     <string name="cheat_button"> Cheat </string>
+
+    <string name="newString"> Cheat </string>
 </resources>
