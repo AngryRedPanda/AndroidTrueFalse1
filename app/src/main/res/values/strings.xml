@@ -2,6 +2,7 @@
     <string name="app_name">Quiz</string>
     <string name="message"> Wrong! </string>
     <string name="message1"> Right! </string>
+    <string name="answer_cheated"> Cheater!</string>
 
     <string name="question_first"> Is Paris the capital of the UK?</string>
     <string name="question_second"> Is SQL a language? </string>

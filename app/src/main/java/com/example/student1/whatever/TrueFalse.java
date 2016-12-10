@@ -27,7 +27,11 @@ public class TrueFalse {
         return answer;
     }
 
-    public void cheated() {
-        this.isCheated = true;
+    public void setCheated(boolean cheated) {
+        this.isCheated = cheated;
+    }
+
+    public boolean isCheated() {
+        return isCheated;
     }
 }

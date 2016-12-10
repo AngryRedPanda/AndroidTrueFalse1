@@ -86,12 +86,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void checkAnswer() {
-        if (Questions[questionCnt].isAnswer()) {
-            Toast.makeText(MainActivity.this, R.string.message1, Toast.LENGTH_SHORT).show();
+        if (Questions[questionCnt].isCheated()) {
+            if (Questions[questionCnt].isAnswer()) {
+                Toast.makeText(MainActivity.this, R.string.message1, Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(MainActivity.this, R.string.message, Toast.LENGTH_SHORT).show();
+            }
         } else {
-            Toast.makeText(MainActivity.this, R.string.message, Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, R.string.answer_cheated, Toast.LENGTH_LONG).show();
         }
     }
 
-
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if(resultCode == RESULT_OK){
+                Questions[questionCnt].setCheated(data.getBooleanExtra("IS_CHEATED", false));
+            }
+        }
+    }
 }
