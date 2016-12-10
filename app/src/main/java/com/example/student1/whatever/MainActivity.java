@@ -14,15 +14,16 @@ import org.w3c.dom.Text;
 public class MainActivity extends AppCompatActivity {
     int questionCnt = 0;
     private TrueFalse Questions[] = {
-            new TrueFalse(R.string.question_first, true),
+            new TrueFalse(R.string.question_first, false),
             new TrueFalse(R.string.question_second, true),
-            new TrueFalse(R.string.question_third, false),
+            new TrueFalse(R.string.question_third, true),
     };
     private TextView mQuestionTextView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         mQuestionTextView = (TextView) findViewById(R.id.textView);
@@ -39,22 +40,14 @@ public class MainActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!Questions[questionCnt].isAnswer()) {
-                    Toast.makeText(MainActivity.this, R.string.message1, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, R.string.message, Toast.LENGTH_SHORT).show();
-                }
+                checkAnswer();
             }
         });
 
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (Questions[questionCnt].isAnswer()) {
-                    Toast.makeText(MainActivity.this, R.string.message1, Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(MainActivity.this, R.string.message, Toast.LENGTH_SHORT).show();
-                }
+                checkAnswer();
             }
         });
 
@@ -89,6 +82,16 @@ public class MainActivity extends AppCompatActivity {
                 i.putExtra("QUESTION_ID", Questions[questionCnt].getTextResID());
                 startActivity(i);
             }
-            });
+        });
+    }
+
+    void checkAnswer() {
+        if (Questions[questionCnt].isAnswer()) {
+            Toast.makeText(MainActivity.this, R.string.message1, Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(MainActivity.this, R.string.message, Toast.LENGTH_SHORT).show();
         }
+    }
+
+
 }

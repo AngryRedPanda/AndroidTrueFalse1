@@ -4,6 +4,7 @@ package com.example.student1.whatever;
 public class TrueFalse {
     private int textResID;
     private boolean answer;
+    private boolean isCheated = false;
 
     public TrueFalse(int mTextResID, boolean answer) {
         this.textResID = mTextResID;
@@ -24,5 +25,9 @@ public class TrueFalse {
 
     public boolean isAnswer() {
         return answer;
+    }
+
+    public void cheated() {
+        this.isCheated = true;
     }
 }

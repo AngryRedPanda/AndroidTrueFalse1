@@ -3,20 +3,18 @@
     <string name="message"> Wrong! </string>
     <string name="message1"> Right! </string>
 
-    <string name="question_first"> Are you a noob at Android</string>
-    <string name="question_second"> Do you like Android?</string>
-    <string name="question_third"> Will you become good at Android?</string>
+    <string name="question_first"> Is Paris the capital of the UK?</string>
+    <string name="question_second"> Is SQL a language? </string>
+    <string name="question_third"> Nutella was made for cosmetics? </string>
     <string name="question_text_view"> </string>
-
-    <string name="question_first_cheat"> ofc you are </string>
-    <string name="question_second_cheat"> that\'s ez one</string>
-    <string name="question_third_cheat"> stop pressing that button it\'s useless</string>
 
     <string name="buttonNxt"> Next </string>
     <string name="buttonPrev"> Previous </string>
-    <string name="button"> True</string>
-    <string name="button1"> False </string>
+    <string name="button"> Yes</string>
+    <string name="button1"> No </string>
     <string name="cheat_button"> Cheat </string>
 
     <string name="newString"> Cheat </string>
+    <string name="cheat">Cheat</string>
+    <string name="back">Back</string>
 </resources>
